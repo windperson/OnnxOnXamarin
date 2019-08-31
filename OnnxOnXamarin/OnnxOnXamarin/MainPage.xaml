@@ -7,6 +7,7 @@
              x:Class="OnnxOnXamarin.MainPage">
 
     <StackLayout>
+        <Label Text="Shuttle Auto-Landing Decider" TextColor="Magenta" FontSize="Large"/>
         <Frame BackgroundColor="Azure" CornerRadius="5" BorderColor="Black">
             <StackLayout>
                 <Picker Title="select STABILITY" x:Name="picker_STABILITY" SelectedIndexChanged="Picker_STABILITY_SelectedIndexChanged">
