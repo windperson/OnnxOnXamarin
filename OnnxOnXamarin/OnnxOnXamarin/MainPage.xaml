@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="OnnxOnXamarin.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Azure" CornerRadius="5" BorderColor="Black">
+            <StackLayout>
+                <Picker Title="select STABILITY" x:Name="picker_STABILITY" SelectedIndexChanged="Picker_STABILITY_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>stab</x:String>
+                        <x:String>xstab</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Picker Title="select ERROR" x:Name="picker_ERROR" SelectedIndexChanged="Picker_ERROR_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>XL</x:String>
+                        <x:String>LX</x:String>
+                        <x:String>MM</x:String>
+                        <x:String>SS</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Picker Title="select SIGN" x:Name="picker_SIGN" SelectedIndexChanged="Picker_SIGN_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>pp</x:String>
+                        <x:String>nn</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Picker Title="select WIND" x:Name="picker_WIND" SelectedIndexChanged="Picker_WIND_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>head</x:String>
+                        <x:String>tail</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Picker Title="select MAGNITUDE" x:Name="picker_MAGNITUDE" SelectedIndexChanged="Picker_MAGNITUDE_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>Low</x:String>
+                        <x:String>Medium</x:String>
+                        <x:String>Strong</x:String>
+                        <x:String>OutOfRange</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Picker Title="select VISIBILITY" x:Name="picker_VISIBILITY" SelectedIndexChanged="Picker_VISIBILITY_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>yes</x:String>
+                        <x:String>no</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button Text="Decide" HorizontalOptions="Center" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame CornerRadius="5" BorderColor="Black" HasShadow="True">
+            <Label Text="Please input Attributes" x:Name="label_Result"/>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
